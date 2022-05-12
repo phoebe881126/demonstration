@@ -1,0 +1,69 @@
+<html>
+
+<head>
+    <title>Example for HTML Marquee Tag</title>
+	
+</head>
+<style>
+img{
+
+
+}
+
+.img11{
+position:absolute;
+top:0;
+left:0;
+}
+.img22{
+position:absolute;
+top:360;
+left:0;
+}
+#pic-two{
+position:absolute;
+top:0;
+left:0;
+}
+
+</style>
+
+	<div class="img11">
+
+	<img src="sunny1.png" >
+	
+	</div>
+
+
+<div id="pic-two" >
+	<img src="sunny2.png" >
+	
+</div>
+
+
+<script>
+	var img = document.getElementById("pic-two");
+	img.left = 0;
+	img.top = 0;
+	document.onkeydown = move;
+	function move(e){
+		var k = e.keyCode || e.which;
+		const distance = 24;
+		switch(k){
+			case 37:
+			img.left = img.left - distance;
+			break;
+			case 38:
+			img.top = img.top - distance;
+			break;
+			case 39:
+			img.left = img.left + distance;
+			break;
+			case 40:
+			img.top = img.top + distance;
+			break;
+		}
+		return img.style.left = img.left + 'px',img.style.top = img.top + 'px';
+	}
+</script>
+</html>

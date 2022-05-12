@@ -1,74 +1,90 @@
-<html>
+ <style>
 
-<head>
-    <title>Example for HTML Marquee Tag</title>
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+body{
+  font-family: ‘cwTeXYen’, sans-serif;
+}
+<!-- body { -->
+	<!-- font-family: Helvetica, Arial, 'Heiti TC', 'Microsoft JhengHei', sans-serif; -->
+<!-- } -->
+
+.class { 
+	font-family: EB Garamond; 
+}
+
+#info {
+
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	line-height: 40px;
 	
-</head>
-<style>
-img{
-
-
+}
+#hw {
+	padding: 10px;
+	text-align: center;
 }
 
-.img11{
-position:absolute;
-top:0;
-left:0;
-}
-.img22{
-position:absolute;
-top:360;
-left:0;
-}
-#pic-two{
-position:absolute;
-top:0;
-left:0;
-}
 
+#container{
+height:1000px;
+margin-top:0px;
+background: -webkit-linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);
+background: -o-linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);
+background: -moz-linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);
+background: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%);
+}
+<!-- background-image: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%); -->
+<!-- background-image: linear-gradient(-20deg, #f794a4 0%, #fdd6bd 100%); -->
 </style>
 
-	<div class="img11">
+<body>
+<div id="container">
+<div id="info">
+<font size="6" face="微軟正黑體">專題展示</font>
+<font size="6" face="monospace"> 2022</font><br>
+<font size="4" face="monospace">410706129 </font>
+<font size="4" face="微軟正黑體">孫苡榕 &nbsp &nbsp聯絡信箱</font>
+<font size="4" face="monospace">:p10150215@gmail.com </font><br>
 
-	<img src="arraysmile1png.png" >
-	
-	</div>
 
 
-<div id="pic-two" >
-	<img src="arraysmile2png.png" >
-	
+
 </div>
+<div id="hw">
+	<table border="1" style="margin-left: auto; margin-right: auto;">
 
-<div class="img22">
+	   <tr align="center">
+			<td width="33%"><img src="gif01.gif" width="400px" height="278"/></td>
+			<td width="33%"><img src="gif02.gif" width="400px" height="278"/></td>
+			<td width="33%"><img src="gif03.gif" width="400px" height="278"/></td>
+		</tr>
+	  
+		<tr align="center">
+			<td  bgcolor="#E2E7ED"><a href="twoNumber.html">雙數字訊息</a>
+			<td  bgcolor="#E2E7ED"><a href="merryXmas.html">Merry Xmas</a>
+			<td  bgcolor="#E2E7ED"><a href="twoPic.html">雙圖片</a>
+			
+		</tr>
 
-	<img src="arraysmile3png.png" >
-	
-	</div>
+	</table>
+	<br>
+	<table border="1" style="margin-left: auto; margin-right: auto;">
 
-<script>
-	var img = document.getElementById("pic-two");
-	img.left = 0;
-	img.top = 0;
-	document.onkeydown = move;
-	function move(e){
-		var k = e.keyCode || e.which;
-		const distance = 24;
-		switch(k){
-			case 37:
-			img.left = img.left - distance;
-			break;
-			case 38:
-			img.top = img.top - distance;
-			break;
-			case 39:
-			img.left = img.left + distance;
-			break;
-			case 40:
-			img.top = img.top + distance;
-			break;
-		}
-		return img.style.left = img.left + 'px',img.style.top = img.top + 'px';
-	}
-</script>
-</html>
+	   <tr align="center">
+			
+			<td width="33%"><img src="gif04.gif" width="400px" height="278"/></td>
+			<td width="33%"><img src="gif05.gif" width="400px" height="278"/></td>
+		</tr>
+	  
+		<tr align="center">
+			
+			<td  bgcolor="#E2E7ED"><a href="monaLisa.html">蒙娜麗莎</a>
+			<td  bgcolor="#E2E7ED"><a href="sunny.html">sunny</a>
+			
+		</tr>
+
+	</table>
+</div>
+</div>
+</body>
